@@ -1,0 +1,14 @@
+plugins {
+  id "com.github.node-gradle.node" version "3.3.0"
+  id "base"
+}
+
+
+node {
+  version = '16.15.1'
+  npmVersion = '8.11.0'
+  yarnVersion = '1.22.10'
+  download = true
+}
+
+build.dependsOn(npm_run_build)

@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "pwa-msedge",
+            "request": "attach",
+            "name": "Attach to Edge",
+            "port": 9222
+        },
+        {
+            "name": "Launch edge",
+            "type": "pwa-msedge",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch localhost",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug app",
+            "type": "firefox",
+            "request": "attach"
+        }
+    ]
+}
